@@ -35,7 +35,7 @@
                   // if successful, bind success message to message
                   //$scope.message = data.message;
                   
-                  var myToastMsg = 
+                  //var myToastMsg = 
 
                   $scope.message = data.superheroAlias;
 

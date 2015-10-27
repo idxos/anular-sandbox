@@ -3,16 +3,17 @@ angular
     .module('app')
     .config(config);
 
-function config($routeProvider, ngToastProvider) {
+function config($routeProvider) {
     
-    ngToastProvider.configure({
-        additionalClasses: 'my-animation'
-      });
 
 
     $routeProvider
         .when('/', {
             controller: 'formController'
+        })
+        .when('/quiz', {
+            templateUrl: 'app/layout/quiz.html',
+            controller: 'QuizController'
         })
         .when('/demo', {
             templateUrl: 'app/demo/demo.directive.html',
@@ -28,5 +29,8 @@ function config($routeProvider, ngToastProvider) {
             //controller: 'GameController'
        // });
 }
+
+
+
 
 

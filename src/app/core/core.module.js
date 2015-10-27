@@ -11,5 +11,6 @@
             'ngSanitize',
             'ngToast',
             'ngTouch'
+            //'ui.router'
         ]);
 })();
