@@ -1,36 +1,41 @@
 <div class="container">    
     <div class="row">
         <section class="col-lg-12">
-            <div id="holidayQuiz" ng-controller="QuizController">
+            <div id="myQuiz" ng-controller="QuizController">
+                
                 
 
-
                 <div class="progress">
-                  <div class="{{($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="q in questions"></div>
+                  <div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
                 </div>
 
 
                 <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
-                <h1>Welcome</h1>
-                  <p><a href="#">Click Here to Get Started</a></p>
-                  <p class="btn" ng-click="activeQuestion = 0">Begin</p>
+                  <h1>Welcome</h1>
+                  <p>Click begin to start</p>
+                  <button class="btn btn-default btn-lg" ng-click="activeQuestion = 0">Begin</button>
                 </div>
 
-                <div class="questions answered">
-                  <p class="ans">Answer 1</p>
-                  <p class="ans">Answer 2</p>
-                  <p class="ans">Answer 3</p>
-                  <p class="ans">Answer 4</p>
 
-                <div class="feedback">
-                  <p>Additional feedback</p>
-                  <div class="btn">Continue</div>
-                </div>
+
+                <div class="question answered {{ $index === activeQuestion ? 'active' : 'inactive' }}" ng-repeat="myQuestion in myQuestions">
+
+                      <p class="txt">{{ myQuestion.question }}</p>
+
+                      <p class="ans"
+                        ng-click="selectAnswer()"
+                        ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+                      
+
+                    <div class="feedback">
+                      <p>Additional feedback</p>
+                      <div class="btn btn btn-default btn-lg">Continue</div>
+                    </div>
 
 
                 <div class="results"></div>
 
-              </div><!--intro-->
+              </div><!--questions answered div -->
             </div><!-- ng-controller-->            
         </section>
     </div>

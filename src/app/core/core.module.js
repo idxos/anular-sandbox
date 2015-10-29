@@ -10,7 +10,8 @@
             'ngAnimate',
             'ngSanitize',
             'ngToast',
-            'ngTouch'
+            'ngTouch',
+            'ui.bootstrap'
             //'ui.router'
         ]);
 })();

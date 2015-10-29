@@ -22,6 +22,7 @@
     "bootstrap": "~3.3.5",
     "firebase": "~2.2.9",
     "firebase-util": "~0.2.5",
-    "angular-masonry": "~0.13.0"
+    "angular-masonry": "~0.13.0",
+    "angular-multi-step-form": "~1.2.0"
   }
 }

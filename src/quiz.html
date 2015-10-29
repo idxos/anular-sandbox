@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <style>
+    
+    .active {
+        left: 40px;
+    }
+
+    .active, .inactive {
+        transition: left 1.5s ease-in-out;
+    }
+
+
+    </style>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="bower_components/ngToast/dist/ngToast.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="bower_components/ngtoast/dist/ngToast-animations.min.css">
+
+    <link rel="stylesheet" href="app/content/css/site.css">
+    <!-- endinject -->
+
+</head>
+<body>  
+    <div data-ng-include="'app/layout/partials/top-nav.html'"></div>
+
+    <div data-ng-include="'app/layout/quiz.html'"></div>
+    
+
+
+
+
+
+
+
+
+
+    <div data-ng-include="'app/layout/partials/footer.html'"></div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/firebase-util/dist/firebase-util.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/angularfire-resource/dist/angularfire-resource.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <script src="bower_components/angular-loader/angular-loader.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/ngToast/dist/ngToast.js"></script>
+    <script src="bower_components/masonry/masonry.js"></script>
+    <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- endinject -->
+
+
+    <script src="app/app.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/core.constant.js"></script>
+    
+    <script src="app/config/demo.config.route.js"></script>
+
+    <script src="app/cookie/cookie.module.js"></script>
+    <script src="app/cookie/cookie.controller.js"></script>
+
+    <script src="app/demo/demo.module.js"></script>
+    <script src="app/demo/demo.controller.js"></script>
+
+    <script src="app/demo/demo.module.form.js"></script>
+    <script src="app/demo/demo.form.js"></script>
+
+    <script src="app/timer/timer.module.js"></script>
+    <!--<script src="app/timer/timer.controller.js"></script>-->
+
+    <script src="app/toast/toast.module.js"></script>
+    <script src="app/toast/toast.controller.js"></script>
+
+    <script src="app/quiz/quiz.module.js"></script>
+    <script src="app/quiz/quiz2.controller.js"></script>
+
+
+    <script type="text/javascript">
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<div class="container">    
+    <div class="row">
+        <section class="col-lg-12">
+            <div id="multistepContainer" ng-controller="MultistepController">
+                
+<accordion>
+    <accordion-group ng-repeat="group in groups" heading="{{group.title}}" is-open="group.open">
+      {{group.content}}
+    </accordion-group>    
+  </accordion>    
+
+                
+            </div><!-- ng-controller-->            
+        </section>
+    </div>
+    
+</div>

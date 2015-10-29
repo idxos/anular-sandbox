@@ -1,0 +1,38 @@
+<div class="container">    
+    <div class="row">
+        <section class="col-lg-12">
+            <div id="holidayQuiz" ng-controller="QuizController">
+                
+
+
+                <div class="progress">
+                  <div class="{{($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="q in questions"></div>
+                </div>
+
+
+                <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
+                <h1>Welcome</h1>
+                  <p><a href="#">Click Here to Get Started</a></p>
+                  <p class="btn" ng-click="activeQuestion = 0">Begin</p>
+                </div>
+
+                <div class="questions answered">
+                  <p class="ans">Answer 1</p>
+                  <p class="ans">Answer 2</p>
+                  <p class="ans">Answer 3</p>
+                  <p class="ans">Answer 4</p>
+
+                <div class="feedback">
+                  <p>Additional feedback</p>
+                  <div class="btn">Continue</div>
+                </div>
+
+
+                <div class="results"></div>
+
+              </div><!--intro-->
+            </div><!-- ng-controller-->            
+        </section>
+    </div>
+    
+</div>
